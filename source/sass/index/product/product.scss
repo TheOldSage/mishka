@@ -1,0 +1,36 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__week {
+    font-weight: $bold;
+    line-height: 20px;
+    font-size: 17px;
+    color: #63d1bb;
+    text-transform: uppercase;
+  }
+  &__name {
+    @include h2();
+  }
+  &__table-line {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+  }
+  &__table-cell {
+    text-align: left;
+  }
+  &__table-cell_right {
+    min-width: 160px;
+  }
+  &__img-container {
+    margin-top: 30px;
+  }
+  &__price {
+    text-align: center;
+    font-weight: $bold;
+    line-height: 20px;
+    font-size: 17px;
+    color: #444444;
+  }
+}

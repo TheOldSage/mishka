@@ -1,0 +1,12 @@
+.about-us {
+  &__advantage-list {
+    @include reset-list();
+  }
+  &__adventage {
+    margin-top: 80px;
+    font-weight: $bold;
+    line-height: 20px;
+    font-size: 17px;
+    color: #444444;
+  }
+}
