@@ -1,0 +1,31 @@
+.reviews {
+  &__name {
+    margin-top: 70px;
+  }
+  &__button {
+    width: 130px;
+    height: 50px;
+    outline: none;
+    border: 1px solid #e8e8e8;
+    background-color: #ffffff;
+  }
+  &__button-container{
+      display: flex;
+      margin-top: 40px;
+      margin-bottom: 40px;
+  }
+  &__button_right{
+      background-image: url(./../../../img/huge-arrow-right.svg.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+  }
+  &__button_left{
+    background-image: url(./../../../img/huge-arrow-left.svg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+&__user-name{
+    color: #000000;
+    font-weight: $bold;
+}
+}

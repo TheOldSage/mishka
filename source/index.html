@@ -92,7 +92,9 @@
               <img src="./img/triple-set-mobile@1x.jpg" alt="Корзина" />
             </div>
             <p class="product__price">Цена: 990 руб.</p>
-            <button class="button product__button">Заказать</button>
+            <div class="product__button">
+              <button class="button">Заказать</button>
+            </div>
           </div>
         </section>
       </div>
@@ -101,21 +103,28 @@
           <div class="container">
             <h2 class="about-us__name">Коротко о нас:</h2>
             <ul class="about-us__advantage-list">
-              <li class="about-us__adventage">Экологически <br> чистые материалы</li>
               <li class="about-us__adventage">
-                Связано вручную с <br> любовью и умилением
+                Экологически <br />
+                чистые материалы
               </li>
               <li class="about-us__adventage">
-                Скандинавский стиль <br> по российской цене
+                Связано вручную с <br />
+                любовью и умилением
+              </li>
+              <li class="about-us__adventage">
+                Скандинавский стиль <br />
+                по российской цене
               </li>
               <li class="about-us__adventage">
                 Поддержка отечественного производителя
               </li>
               <li class="about-us__adventage">
-                Увеличивает лайки <br> на фотографиях
+                Увеличивает лайки <br />
+                на фотографиях
               </li>
               <li class="about-us__adventage">
-                Поставляется в <br> подарочной упаковке
+                Поставляется в <br />
+                подарочной упаковке
               </li>
             </ul>
           </div>
@@ -125,7 +134,6 @@
         <section class="reviews">
           <div class="container">
             <h2 class="reviews__name">Отзывы</h2>
-            <button class="button reviews__button">Написать</button>
             <p class="reviews__text">
               Я молодая мама, но всё равно фотографии не набирали и близко
               такого количества лайков, как у популярных инстамамочек. В
@@ -137,13 +145,17 @@
               <p class="reviews__user-name">Анастасия Красильникова</p>
               <a class="reviews__mail" href="#">@misssssiskras</a>
             </div>
-            <button class="reviews__button"></button>
-            <button class="reviews__button">
-              <span class="visually-hidden"> Стрелка влево </span>
-            </button>
-            <button class="reviews__button">
-              <span class="visually-hidden">Стрелка вправо</span>
-            </button>
+            <div class="reviews__button-container">
+              <button class="reviews__button reviews__button_left">
+                <span class="visually-hidden"> Стрелка влево </span>
+              </button>
+              <button class="reviews__button reviews__button_right">
+                <span class="visually-hidden">Стрелка вправо</span>
+              </button>
+            </div>
+            <div class="reviews__button-write">
+              <button class="button">Написать</button>
+            </div>
           </div>
         </section>
       </div>
@@ -153,12 +165,18 @@
             <h2 class="contacts__name">Контакты</h2>
             <table class="contacts__table">
               <tr class="contacts__table-line">
-                <td class="contacts__table-cell">e-mail:</td>
-                <td class="contacts__table-cell">info@mimimishkashop.ru</td>
+                <td class="contacts__table-cell contacts__table-cell_left">
+                  e-mail:
+                </td>
+                <td class="contacts__table-cell contacts__table-cell_right">
+                  info@mimimishkashop.ru
+                </td>
               </tr>
               <tr class="contacts__table-line">
-                <td class="contacts__table-cell">адрес:</td>
-                <td class="contacts__table-cell">
+                <td class="contacts__table-cell contacts__table-cell_left">
+                  адрес:
+                </td>
+                <td class="contacts__table-cell contacts__table-cell_width">
                   г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
                 </td>
               </tr>
@@ -180,8 +198,8 @@
           <li class="popup__button">m</li>
           <li class="popup__button">l</li>
         </ul>
-        <div class="popup__button">
-          <button class="button">Добавить</button>
+        <div class="popup__button-add">
+          <button class="button button_without-border">Добавить</button>
         </div>
       </section>
     </main>
@@ -193,24 +211,32 @@
           </div>
           <ul class="footer__social-list">
             <li class="footer__social-item">
-              <a class="footer__social-link" href="https://www.instagram.com"
+              <a
+                class="footer__social-link footer__social-link_inst"
+                href="https://www.instagram.com"
                 ><span class="visually-hidden"> Инстаграм </span></a
               >
             </li>
             <li class="footer__social-item">
-              <a class="footer__social-link" href="https://www.facebook.com"
+              <a
+                class="footer__social-link footer__social-link_face"
+                href="https://www.facebook.com"
                 ><span class="visually-hidden"> Фейсбук </span></a
               >
             </li>
             <li class="footer__social-item">
-              <a class="footer__social-link" href="https://twitter.com"
+              <a
+                class="footer__social-link footer__social-link_twit"
+                href="https://twitter.com"
                 ><span class="visually-hidden"> Твиттер </span></a
               >
             </li>
           </ul>
-          <p class="footer__text">Разработано</p>
-          <div class="footer__html-img">
-            <img src="./img/logo-htmlacademy.svg" alt="Лого" />
+          <div class="footer__html-container">
+            <p class="footer__text">Разработано</p>
+            <div class="footer__html-img">
+              <img src="./img/logo-htmlacademy.svg" alt="Лого" />
+            </div>
           </div>
         </div>
       </footer>

@@ -1,8 +1,9 @@
 @import "./popup/popup.scss";
-@import "./../header/header.scss";
 @import "./menu/menu.scss";
 @import "./product/product.scss";
 @import "./about-us/about-us.scss";
+@import "./reviews/reviews.scss";
+@import "./contacts/contacts.scss";
 .main-page-header{
     display: flex;
     justify-content: center;

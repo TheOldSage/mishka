@@ -1,0 +1,22 @@
+.contacts {
+  &__table-cell_left {
+    min-width: 70px;
+  }
+  &__table-line {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 20px;
+  }
+  &__table-cell_right {
+    border-bottom: 1px solid #63d1bb;
+  }
+  &__map {
+    margin-top: 40px;
+    width: 130%;
+    position: relative;
+    left: -18%;
+  }
+  &__table-cell_width {
+    width: 145px;
+  }
+}

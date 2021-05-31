@@ -1,3 +1,41 @@
 .popup {
-   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__name {
+      margin-bottom: -5px;
+    font-weight: $bold;
+    font-size: 25px;
+    line-height: 30px;
+    flex-wrap: wrap;
+    width: 150px;
+    text-align: center;
+  }
+  &__button-list {
+    @include reset-list();
+    display: flex;
+    width: 260px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  &__button {
+    border: 2px solid rgba($color: #444444, $alpha: 0.1);
+    width: 82px;
+    height: 52px;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: $bold;
+    font-size: 17px;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+  &__text{
+      margin-top: 20px;
+      margin-bottom: 30px;
+  }
+  &__button-add{
+    background-color: #63d1bb;
+    border: none;
+    outline: none;
+  }
 }
