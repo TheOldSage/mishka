@@ -102,9 +102,12 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      margin-right: 50px;
+      position: relative;
+      left: -5px;
+      top: 40px;
+      margin-right: -70px;
       margin-top: 60px;
-      margin-bottom: 35px;
+      margin-bottom: -150px;
     }
     &__name {
       font-weight: $bold;
@@ -114,9 +117,32 @@
     }
     &__week {
       position: absolute;
-      left: 5px;
+      left: -145px;
       line-height: 17px;
       font-size: 17px;
+    }
+    &__price {
+      margin-top: 52px;
+      margin-bottom: 30px;
+      line-height: 24px;
+      font-size: 20px;
+      margin-left: -580px;
+    }
+    &__description {
+      font-size: 17px;
+      line-height: 30px;
+    }
+    &__img-container {
+      z-index: -1;
+    }
+    &__container {
+      position:relative;
+     margin-top: 50px;
+    }
+    &__text-container {
+      width: 300px;
+      margin-right: 35px;
+      margin-top: 170px;
     }
   }
 }

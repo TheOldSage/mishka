@@ -60,8 +60,27 @@
   .menu{
     &__list {
       display: flex;
-      margin-left: 53px;
-      margin-right: 53px;
+      margin-left: 0px;
+      margin-right: 0px;
+      width: 1060px;
+      align-self: center;
+    }
+    &__item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-weight: $bold;
+      font-size: 20px;
+      line-height: 30px;
+      color: #ffffff;
+      background-color: #63d1bb;
+      outline: none;
+      border: none;
+      width: 525px;
+      height: 103px;
+    }
+    &__item_toys {
+      background-color: #56c3b2;
     }
   }
 }
