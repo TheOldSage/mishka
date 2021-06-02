@@ -2,11 +2,30 @@
   &__advantage-list {
     @include reset-list();
   }
-  &__adventage {
+  &__advantage {
     margin-top: 80px;
     font-weight: $bold;
     line-height: 20px;
     font-size: 17px;
-    color: #444444;
+    color: #000000;
+  }
+}
+@media (min-width: $tablet-width) {
+  .about-us {
+    &__name {
+      font-weight: $bold;
+      font-size: 43px;
+      line-height: 50px;
+      color: #000000;
+    }
+    &__advantage {
+      line-height: 22px;
+      font-size: 20px;
+      width: 320px;
+    }
+    &__advantage-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 }

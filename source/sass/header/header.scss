@@ -1,4 +1,5 @@
 .header {
+  min-width: 320px;
   &__list {
     @include reset-list();
   }
@@ -37,5 +38,32 @@
     display: flex;
     justify-content: center;
     border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+  }
+}
+@media(min-width: $tablet-width) {
+  .header{ 
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+    &__list {
+      @include reset-list();
+      display: flex;
+    }
+    &__item_delivery {
+      display: block;
+    }
+    &__logo-container {
+      display: flex;
+      justify-content: start;
+     
+      margin-left: 50px;
+      margin-bottom: 20px;
+      
+      border-bottom: none;
+    }
+    &__container{
+      display: flex;
+    }
+    &__item {
+      border-bottom: none;
+    }
   }
 }
