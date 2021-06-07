@@ -15,9 +15,21 @@
     width: 320px;
     position: relative;
     margin-left: -30px;
-    
+    margin-bottom: 40px;
   }
   &__table-cell_width {
     width: 145px;
   }
+}
+@media (min-width: $tablet-width){
+  .contacts{
+  &__map {
+    margin-top: 40px;
+    width: 768px;
+    height: 457px;
+    position: relative;
+    margin-left: -30px;
+    margin-bottom: 40px;
+  }
+}
 }

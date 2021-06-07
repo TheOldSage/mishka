@@ -22,3 +22,29 @@
   color: #444444;
   text-transform: uppercase;
 }
+.button-small {
+  @include reset-btn();
+  width: 260px;
+  height: 52px;
+  border: 2px solid #444444;
+  text-align: center;
+  font-weight: $bold;
+  line-height: 20px;
+  font-size: 17px;
+  color: #444444;
+  text-transform: uppercase;
+}
+@media (min-width: $tablet-width) {
+.button-small{
+  @include reset-btn();
+  width: 175px;
+  height: 52px;
+  border: 2px solid #444444;
+  text-align: center;
+  font-weight: $bold;
+  line-height: 20px;
+  font-size: 17px;
+  color: #444444;
+  text-transform: uppercase;
+}
+}

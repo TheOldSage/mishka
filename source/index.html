@@ -21,8 +21,12 @@
                 media="(min-width: 768px)"
                 srcset="./img/logo-tablet.svg"
               />
-              <img src="./img/logo-mobile.svg" alt="Мишка" / width="90px"
-              height="40px">
+              <img
+                src="./img/logo-mobile.svg"
+                alt="Мишка"
+                width="90px"
+                height="40px"
+              />
             </picture>
           </div>
           <ul class="header__list">
@@ -144,26 +148,26 @@
           <div class="container">
             <h2 class="about-us__name">Коротко о нас:</h2>
             <ul class="about-us__advantage-list">
-              <li class="about-us__advantage">
+              <li class="about-us__advantage about-us__advantage_materials">
                 Экологически <br />
                 чистые материалы
               </li>
-              <li class="about-us__advantage">
+              <li class="about-us__advantage about-us__advantage_love">
                 Связано вручную с <br />
                 любовью и умилением
               </li>
-              <li class="about-us__advantage">
+              <li class="about-us__advantage about-us__advantage_style">
                 Скандинавский стиль <br />
                 по российской цене
               </li>
-              <li class="about-us__advantage">
+              <li class="about-us__advantage about-us__advantage_help">
                 Поддержка отечественного производителя
               </li>
-              <li class="about-us__advantage">
+              <li class="about-us__advantage about-us__advantage_like">
                 Увеличивает лайки <br />
                 на фотографиях
               </li>
-              <li class="about-us__advantage">
+              <li class="about-us__advantage about-us__advantage_wrapper">
                 Поставляется в <br />
                 подарочной упаковке
               </li>
@@ -175,6 +179,9 @@
         <section class="reviews">
           <div class="container">
             <h2 class="reviews__name">Отзывы</h2>
+            <div class="reviews__button-write">
+              <button class="button-small">Написать</button>
+            </div>
             <p class="reviews__text">
               Я молодая мама, но всё равно фотографии не набирали и близко
               такого количества лайков, как у популярных инстамамочек. В
@@ -193,9 +200,6 @@
               <button class="reviews__button reviews__button_right">
                 <span class="visually-hidden">Стрелка вправо</span>
               </button>
-            </div>
-            <div class="reviews__button-write">
-              <button class="button">Написать</button>
             </div>
           </div>
         </section>
@@ -222,9 +226,6 @@
                 </td>
               </tr>
             </table>
-            <div class="contacts__button">
-              <button class="button">Напишите нам</button>
-            </div>
             <div class="contacts__map">
               <picture>
                 <source
@@ -234,17 +235,20 @@
                 />
                 <source
                   media="(min-width: 768px)"
-                  srcset="./img/map-tablet@1x.jpg"
+                  srsetc="./img/map-tablet@1x.jpg"
                   srcset="./img/map-tablet@2x.jpg"
                 />
                 <img
                   src="./img/map-mobile@1x.jpg"
                   srcset="./img/map-mobile@2x.jpg"
                   alt="Карта"
-                  width="322px"
+                  width="320px"
                   height="457px"
                 />
               </picture>
+            </div>
+            <div class="contacts__button">
+              <button class="button">Напишите нам</button>
             </div>
           </div>
         </section>

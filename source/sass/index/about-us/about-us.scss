@@ -1,6 +1,14 @@
 .about-us {
+  &__name{
+    font-weight: $bold;
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 60px;
+    color:#000 ;
+  }
   &__advantage-list {
     @include reset-list();
+    position: relative;
   }
   &__advantage {
     margin-top: 80px;
@@ -8,6 +16,78 @@
     line-height: 20px;
     font-size: 17px;
     color: #000000;
+  }
+  &__advantage_materials::before{
+    content: "";
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    left: 10px;
+    top: -50px;
+    background-image: url(./../../../img/icon-1.svg.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    filter: invert(82%) sepia(41%) saturate(489%) hue-rotate(109deg) brightness(88%) contrast(84%);
+  }
+  &__advantage_love::before{
+    content: "";
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    left: 10px;
+    top: 70px;
+    background-image: url(./../../../img/icon-2.svg.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    filter: invert(82%) sepia(41%) saturate(489%) hue-rotate(109deg) brightness(88%) contrast(84%);
+  }
+  &__advantage_style::before{
+    content: "";
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+    top: 190px;
+    background-image: url(./../../../img/icon-3.svg.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    filter: invert(82%) sepia(41%) saturate(489%) hue-rotate(109deg) brightness(88%) contrast(84%);
+  }
+  &__advantage_help::before{
+    content: "";
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+    top: 310px;
+    background-image: url(./../../../img/icon-4.svg.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    filter: invert(82%) sepia(41%) saturate(489%) hue-rotate(109deg) brightness(88%) contrast(84%);
+  }
+  &__advantage_like::before{
+    content: "";
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    left: 10px;
+    top: 430px;
+    background-image: url(./../../../img/icon-5.svg.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    filter: invert(82%) sepia(41%) saturate(489%) hue-rotate(109deg) brightness(88%) contrast(84%);
+  }
+  &__advantage_wrapper::before{
+    content: "";
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    left: 10px;
+    top: 550px;
+    background-image: url(./../../../img/icon-6.svg.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    filter: invert(82%) sepia(41%) saturate(489%) hue-rotate(109deg) brightness(88%) contrast(84%);
   }
 }
 @media (min-width: $tablet-width) {
@@ -27,5 +107,63 @@
       display: flex;
       flex-wrap: wrap;
     }
+    &__advantage_materials::before{
+      content: "";
+      width: 60px;
+      height: 40px;
+      position: absolute;
+      left: 10px;
+      top: 30px;
+    }
+    &__advantage_love::before{
+      content: "";
+      width: 60px;
+      height: 40px;
+      position: absolute;
+      left: 330px;
+      top: 30px;
+    }
+    &__advantage_style::before{
+      content: "";
+      width: 60px;
+      height: 40px;
+      position: absolute;
+      left: 5px;
+      top: 160px;
+    }
+    &__advantage_help::before{
+      content: "";
+      width: 60px;
+      height: 40px;
+      position: absolute;
+      left: 315px;
+      top: 160px;
+    }
+    &__advantage_like::before{
+      content: "";
+      width: 60px;
+      height: 40px;
+      position: absolute;
+      left: 10px;
+      top: 290px;
+    }
+    &__advantage_wrapper::before{
+      content: "";
+      width: 60px;
+      height: 40px;
+      position: absolute;
+      left: 325px;
+      top: 285px;
+    }
   }
+}
+@media (min-width: $desktop-width) {
+  .about-us {
+    &__name {
+      font-weight: $bold;
+      font-size: 53px;
+      line-height: 57px;
+      color: #000000;
+    }
+}
 }
