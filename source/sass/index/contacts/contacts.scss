@@ -1,4 +1,14 @@
 .contacts {
+  &__button{
+    display: flex;
+    justify-content: center;
+  }
+  &__name{
+    font-weight: $bold;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+  }
   &__table-cell_left {
     min-width: 70px;
   }
@@ -25,11 +35,71 @@
   .contacts{
   &__map {
     margin-top: 40px;
-    width: 768px;
-    height: 457px;
     position: relative;
     margin-left: -30px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    width: 100%;
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+  }
+  &__table-line_bot{
+    margin-left: 350px;
+    margin-top: -53px;
+  }
+  &__name{
+    font-weight: $bold;
+    font-size: 43px;
+    line-height: 50px;
+    color: #000000;
+  }
+  &__table-cell{
+    font-size: 17px;
+    line-height: 30px;
+  }
+  &__table-cell_width {
+    width: 230px;
+  }
+  &__table-line_bot::before{
+    content: "";
+    width: 60px;
+    height: 90px;
+    position: absolute;
+    background-image: url(./../../../img/icon-flag.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    top: 2590px;
+    right: 70px;
+  }
+}
+}
+@media (min-width: $desktop-width){
+  .contacts{
+    margin-top: 150px;
+  &__map {
+    margin-top: -140px;
+    position: relative;
+    margin-left: -30px;
+    width: 525px;
+    height: 457px;
+    position: relative;
+    top: -80px;
+  }
+  &__name{
+    font-size: 53px;
+    line-height: 57px;
+  }
+  &__table-line_bot{
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  &__button{
+    display: block;
+    margin-top: -190px;
+  }
+  &__text-container{
+    
   }
 }
 }

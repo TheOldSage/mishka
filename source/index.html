@@ -61,7 +61,7 @@
       <div class="main-page__menu">
         <section class="menu">
           <h1 class="menu__name">
-            Милые штуки ручной <br />
+            Милые штуки ручной <br class="menu__br" />
             работы для дома
           </h1>
           <ul class="menu__list">
@@ -179,27 +179,29 @@
         <section class="reviews">
           <div class="container">
             <h2 class="reviews__name">Отзывы</h2>
-            <div class="reviews__button-write">
-              <button class="button-small">Написать</button>
-            </div>
-            <p class="reviews__text">
-              Я молодая мама, но всё равно фотографии не набирали и близко
-              такого количества лайков, как у популярных инстамамочек. В
-              отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
-              фотографии сразу стали более стильными, а также набирают больше
-              лайков!
-            </p>
-            <div class="reviews__mail-container">
-              <p class="reviews__user-name">Анастасия Красильникова</p>
-              <a class="reviews__mail" href="#">@misssssiskras</a>
-            </div>
-            <div class="reviews__button-container">
-              <button class="reviews__button reviews__button_left">
-                <span class="visually-hidden"> Стрелка влево </span>
-              </button>
-              <button class="reviews__button reviews__button_right">
-                <span class="visually-hidden">Стрелка вправо</span>
-              </button>
+            <div class="reviews__wrapper">
+              <div class="reviews__button-write">
+                <button class="button-small">Написать</button>
+              </div>
+              <p class="reviews__text">
+                Я молодая мама, но всё равно фотографии не набирали и близко
+                такого количества лайков, как у популярных инстамамочек. В
+                отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+                фотографии сразу стали более стильными, а также набирают больше
+                лайков!
+              </p>
+              <div class="reviews__mail-container">
+                <p class="reviews__user-name">Анастасия Красильникова</p>
+                <a class="reviews__mail" href="#">@misssssiskras</a>
+              </div>
+              <div class="reviews__button-container">
+                <button class="reviews__button reviews__button_left">
+                  <span class="visually-hidden"> Стрелка влево </span>
+                </button>
+                <button class="reviews__button reviews__button_right">
+                  <span class="visually-hidden">Стрелка вправо</span>
+                </button>
+              </div>
             </div>
           </div>
         </section>
@@ -217,12 +219,12 @@
                   info@mimimishkashop.ru
                 </td>
               </tr>
-              <tr class="contacts__table-line">
+              <tr class="contacts__table-line contacts__table-line_bot ">
                 <td class="contacts__table-cell contacts__table-cell_left">
                   адрес:
                 </td>
                 <td class="contacts__table-cell contacts__table-cell_width">
-                  г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+                  г. Санкт-Петербург,<br> ул. Большая Конюшенная, д. 19/8, офис 101
                 </td>
               </tr>
             </table>
@@ -231,21 +233,36 @@
                 <source
                   media="(min-width: 1200px)"
                   srcset="./img/map-desktop@1x.jpg"
-                  srcset="./img/map-desktop@2x.jpg"
                 />
                 <source
                   media="(min-width: 768px)"
-                  srsetc="./img/map-tablet@1x.jpg"
-                  srcset="./img/map-tablet@2x.jpg"
+                  srcset="./img/map-tablet@1x.jpg"
                 />
                 <img
                   src="./img/map-mobile@1x.jpg"
-                  srcset="./img/map-mobile@2x.jpg"
+                  alt="Мишка"
+                  width="100%"
+                />
+              </picture>
+              <!-- <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  src="./img/map-desktop@1x.jpg"
+                  srcset="./img/map-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  src="./img/map-tablet@1x.jpg "
+                  srcset="./img/map-tablet@2x.jpg 2x"
+                />
+                <img
+                  src="./img/map-mobile@1x.jpg"
+                  srcset="./img/map-mobile@2x.jpg 2x"
                   alt="Карта"
                   width="320px"
                   height="457px"
                 />
-              </picture>
+              </picture> -->
             </div>
             <div class="contacts__button">
               <button class="button">Напишите нам</button>

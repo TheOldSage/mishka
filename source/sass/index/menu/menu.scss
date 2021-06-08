@@ -1,13 +1,14 @@
 .menu {
     background-image: url(./../../../img/hero-mobile@1x.jpg);
-    background-position: -130px -20px;
+    background-position: -120px -20px;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url(./../../../img/hero-mobile@2x.jpg);
-      background-size: 1150px auto;
+      background-size: 575px auto;
     }
   &__list {
     @include reset-list();
@@ -49,15 +50,40 @@
 }
 @media (min-width: $tablet-width){
   .menu{
+    background-image: url(./../../../img/hero-tablet@1x.jpg);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url(./../../../img/hero-tablet@2x.jpg);
+      background-size: 1150px auto;
+    }
     &__list {
       display: flex;
       margin-left: 50px;
       margin-right: 50px;
     }
+    &__name{
+      font-size: 43px;
+      line-height: 50px;
+      width: 510px;
+      margin-bottom: 372px;
+      margin-top: 163px;
+    }
+    &__br{
+      display: none;
+    }
   }
 }
 @media (min-width: $desktop-width){
   .menu{
+    background-image: url(./../../../img/hero-desktop@1x.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url(./../../../img/hero-desktop@2x.jpg);
+      background-size: 100% auto;
+    }
     &__list {
       display: flex;
       margin-left: 0px;
@@ -82,5 +108,11 @@
     &__item_toys {
       background-color: #56c3b2;
     }
+    &__name{
+      font-size: 53px;
+      line-height: 57px;
+      margin-bottom: 392px;
+      margin-top: 267px;
   }
+}
 }

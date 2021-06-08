@@ -28,8 +28,12 @@
     color: #000000;
     font-weight: $bold;
   }
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+  }
   &__button-write{
-    z-index: 0;
+    order: 1;
   }
 }
 @media (min-width: $tablet-width) {
@@ -53,11 +57,7 @@
       border: none;
       background-color: #ffffff;
     }
-    &__button-container {
-      display: flex;
-      margin-left: 480px;
-      margin-top: -50px;
-    }
+    
     &__container-main{
       display: flex;
       justify-content: space-between;
@@ -66,6 +66,7 @@
       width: 173px;
       margin-left: 485px;
       margin-top: -85px;
+      order: 0;
     }
   }
 }
