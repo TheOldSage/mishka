@@ -209,63 +209,49 @@
       <div class="main-page__contacts">
         <section class="contacts">
           <div class="container">
-            <h2 class="contacts__name">Контакты</h2>
-            <table class="contacts__table">
-              <tr class="contacts__table-line">
-                <td class="contacts__table-cell contacts__table-cell_left">
-                  e-mail:
-                </td>
-                <td class="contacts__table-cell contacts__table-cell_right">
-                  info@mimimishkashop.ru
-                </td>
-              </tr>
-              <tr class="contacts__table-line contacts__table-line_bot ">
-                <td class="contacts__table-cell contacts__table-cell_left">
-                  адрес:
-                </td>
-                <td class="contacts__table-cell contacts__table-cell_width">
-                  г. Санкт-Петербург,<br> ул. Большая Конюшенная, д. 19/8, офис 101
-                </td>
-              </tr>
-            </table>
-            <div class="contacts__map">
-              <picture>
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="./img/map-desktop@1x.jpg"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="./img/map-tablet@1x.jpg"
-                />
-                <img
-                  src="./img/map-mobile@1x.jpg"
-                  alt="Мишка"
-                  width="100%"
-                />
-              </picture>
-              <!-- <picture>
-                <source
-                  media="(min-width: 1200px)"
-                  src="./img/map-desktop@1x.jpg"
-                  srcset="./img/map-desktop@2x.jpg 2x"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  src="./img/map-tablet@1x.jpg "
-                  srcset="./img/map-tablet@2x.jpg 2x"
-                />
-                <img
-                  src="./img/map-mobile@1x.jpg"
-                  srcset="./img/map-mobile@2x.jpg 2x"
-                  alt="Карта"
-                  width="320px"
-                  height="457px"
-                />
-              </picture> -->
-            </div>
-            <div class="contacts__button">
-              <button class="button">Напишите нам</button>
+            <div class="contacts__main-container">
+              <h2 class="contacts__name">Контакты</h2>
+              <table class="contacts__table">
+                <tr class="contacts__table-line">
+                  <td class="contacts__table-cell contacts__table-cell_left">
+                    e-mail:
+                  </td>
+                  <td class="contacts__table-cell contacts__table-cell_right">
+                    info@mimimishkashop.ru
+                  </td>
+                </tr>
+                <tr class="contacts__table-line contacts__table-line_bot">
+                  <td class="contacts__table-cell contacts__table-cell_left">
+                    адрес:
+                  </td>
+                  <td class="contacts__table-cell contacts__table-cell_width">
+                    г. Санкт-Петербург,<br />
+                    ул. Большая Конюшенная, д. 19/8, офис 101
+                  </td>
+                </tr>
+              </table>
+              <div class="contacts__button">
+                <button class="button">Напишите нам</button>
+              </div>
+              <div class="contacts__map-container">
+                <div class="contacts__map">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./img/map-desktop@1x.jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./img/map-tablet@1x.jpg"
+                    />
+                    <img
+                      src="./img/map-mobile@1x.jpg"
+                      alt="Мишка"
+                      width="100%"
+                    />
+                  </picture>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -285,37 +271,39 @@
     </main>
     <div class="main-page__footer">
       <footer class="footer">
-        <div class="container">
-          <div class="footer__logo-container">
-            <img src="./img/logo-footer.svg" alt="Мишка" />
-          </div>
-          <ul class="footer__social-list">
-            <li class="footer__social-item">
-              <a
-                class="footer__social-link footer__social-link_inst"
-                href="https://www.instagram.com"
-                ><span class="visually-hidden"> Инстаграм </span></a
-              >
-            </li>
-            <li class="footer__social-item">
-              <a
-                class="footer__social-link footer__social-link_face"
-                href="https://www.facebook.com"
-                ><span class="visually-hidden"> Фейсбук </span></a
-              >
-            </li>
-            <li class="footer__social-item">
-              <a
-                class="footer__social-link footer__social-link_twit"
-                href="https://twitter.com"
-                ><span class="visually-hidden"> Твиттер </span></a
-              >
-            </li>
-          </ul>
-          <div class="footer__html-container">
-            <p class="footer__text">Разработано</p>
-            <div class="footer__html-img">
-              <img src="./img/logo-htmlacademy.svg" alt="Лого" />
+        <div class="footer__main-container">
+          <div class="footer__social-container">
+            <div class="footer__logo-container">
+              <img src="./img/logo-footer.svg" alt="Мишка" />
+            </div>
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a
+                  class="footer__social-link footer__social-link_inst"
+                  href="https://www.instagram.com"
+                  ><span class="visually-hidden"> Инстаграм </span></a
+                >
+              </li>
+              <li class="footer__social-item">
+                <a
+                  class="footer__social-link footer__social-link_face"
+                  href="https://www.facebook.com"
+                  ><span class="visually-hidden"> Фейсбук </span></a
+                >
+              </li>
+              <li class="footer__social-item">
+                <a
+                  class="footer__social-link footer__social-link_twit"
+                  href="https://twitter.com"
+                  ><span class="visually-hidden"> Твиттер </span></a
+                >
+              </li>
+            </ul>
+            <div class="footer__html-container">
+              <p class="footer__text">Разработано</p>
+              <div class="footer__html-img">
+                <img src="./img/logo-htmlacademy.svg" alt="Лого" />
+              </div>
             </div>
           </div>
         </div>

@@ -57,7 +57,11 @@
       border: none;
       background-color: #ffffff;
     }
-    
+    &__button-container {
+      display: flex;
+      margin-left: 480px;
+      margin-top: -60px;
+    }
     &__container-main{
       display: flex;
       justify-content: space-between;
