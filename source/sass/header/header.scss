@@ -25,6 +25,7 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     left: 25px;
+    opacity: 20%;
   }
   &__item {
     display: flex;
@@ -60,6 +61,7 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     left: 25px;
+    opacity: 20%;
   }
 }
 .visually-hidden{
@@ -127,9 +129,6 @@
       border: none;
       width: 86px;
       height: 86px;
-      background-image: url(./../../img/icon-search.svg);
-      background-repeat: no-repeat;
-      background-position: 33px 31px;
       border-right: 1px solid #ececec;
       border-left: 1px solid #ececec;
       background-color: #fff;
@@ -145,6 +144,18 @@
       background-repeat: no-repeat;
       background-position: 0 0;
       left: 115px;
+    }
+    &__search-button::before {
+      content: "";
+      width: 26px;
+      height: 25px;
+      position: absolute;
+      background-image: url(./../../img/icon-search.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      left: 33px;
+      top: 33px;
+      opacity: 20%;
     }
   }
 }

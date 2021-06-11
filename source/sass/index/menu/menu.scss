@@ -32,6 +32,28 @@
   &__item_toys {
     background-color: #56c3b2;
   }
+  &__item_toys::before{
+      content: "";
+      width: 68px;
+      height: 68px;
+      position: absolute;
+      background-image: url(./../../../img/icon-toy.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      filter: invert(87%) sepia(10%) saturate(1001%) hue-rotate(120deg) brightness(88%) contrast(79%);
+      right: 10px;
+  }
+  &__item_objects::before{
+      content: "";
+      width: 68px;
+      height: 68px;
+      position: absolute;
+      background-image: url(./../../../img/icon-interior.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      filter: invert(87%) sepia(10%) saturate(1001%) hue-rotate(120deg) brightness(88%) contrast(79%);
+      right: 1px;
+  }
   &__link-text {
     flex-wrap: wrap;
     width: 90px;
@@ -64,6 +86,17 @@
       margin-left: 50px;
       margin-right: 50px;
     }
+    &__list::before{
+      content: "";
+      width: 768px;
+      height: 25px;
+      position: absolute;
+      background-image: url(./../../../img/bg-zigzag-fill.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      top: 815px;
+      right: 1px;
+    }
     &__name{
       font-size: 43px;
       line-height: 50px;
@@ -74,6 +107,19 @@
     &__br{
       display: none;
     }
+    &__item_toys::before{
+      content: "";
+      width: 68px;
+      height: 68px;
+      right: 70px;
+      top: 752px;
+  }
+  &__item_objects::before{
+      content: "";
+      width: 68px;
+      height: 68px;
+      left: 315px;
+  }
   }
 }
 @media (min-width: $desktop-width){
@@ -91,6 +137,17 @@
       margin-right: 0px;
       width: 1060px;
       align-self: center;
+    }
+    &__list::before{
+      content: "";
+      width: 1250px;
+      height: 25px;
+      position: absolute;
+      background-image: url(./../../../img/bg-zigzag-fill.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      top: 815px;
+      left: 150px;
     }
     &__item {
       display: flex;
@@ -115,5 +172,18 @@
       margin-bottom: 205px;
       margin-top: 267px;
   }
+  &__item_toys::before{
+    content: "";
+    width: 68px;
+    height: 68px;
+    right: 230px;
+    top: 752px;
+}
+&__item_objects::before{
+    content: "";
+    width: 68px;
+    height: 68px;
+    left: 635px;
+}
 }
 }

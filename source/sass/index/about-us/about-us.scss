@@ -98,6 +98,17 @@
       line-height: 50px;
       color: #000000;
     }
+    &__name::before {
+      content: "";
+      width: 768px;
+      height: 25px;
+      position: absolute;
+      background-image: url(./../../../img/bg-zigzag-line.svg);
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      top: 1500px;
+      left: 1px;
+    }
     &__advantage {
       line-height: 22px;
       font-size: 20px;
@@ -164,6 +175,13 @@
       font-size: 53px;
       line-height: 57px;
       color: #000000;
+    }
+    &__name::before {
+      content: "";
+      width: 1050px;
+      height: 25px;
+      top: 1600px;
+      left: 230px;
     }
 }
 }
