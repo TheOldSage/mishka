@@ -62,102 +62,209 @@
           </ul>
         </div>
       </header>
-      </header>
     </div>
     <main>
+      <div class="catalog-page__name">
+        <section class="name">
+          <h1 class="name__name">Каталог товаров</h1>
+        </section>
+      </div>
       <div class="catalog-page__catalog">
         <section class="catalog">
-          <h1 class="catalog__name">
-            Каталог товаров
-           </h1>
-          <ul class="catalog__list">
-            <li class="catalog__item">
-              <div class="catalog__img-container">
-                <img
-                  src="./img/photo-hare-desktop@1x.jpg"
-                  alt="Зайчик попрыгайчик"
-                />
-              </div>
-              <h3 class="catalog__item-name">Зайчик попрыгайчик</h3>
-              <span class="catalog__item-description"
-                >Рост 30 см, вес 200 г</span
-              >
-              <p class="catalog__item-price">1 200 руб.</p>
-              <button class="catalog__cart">
-                <span class="visually-hidden">Добавить в корзину</span>
-              </button>
-            </li>
-            <li class="catalog__item">
-              <div class="catalog__img-container">
-                <img src="./img/photo-2-desktop.jpg" alt="Корзинка для белья" />
-              </div>
-              <h3 class="catalog__item-name">Корзинка для белья</h3>
-              <span class="catalog__item-description"
-                >Диаметр 15 см, высота 10 см</span
-              >
-              <p class="catalog__item-price">690 руб.</p>
-              <button class="catalog__cart">
-                <span class="visually-hidden">Добавить в корзину</span>
-              </button>
-            </li>
-            <li class="catalog__item">
-              <div class="catalog__img-container">
-                <img
-                  src="./img/photo-3-desktop.jpg"
-                  alt="Большая корзинка для игрушек"
-                />
-              </div>
-              <h3 class="catalog__item-name">Большая корзинка для игрушек</h3>
-              <span class="catalog__item-description"
-                >Диаметр 30 см, высота 30 см</span
-              >
-              <p class="catalog__item-price">1 500 руб.</p>
-              <button class="catalog__cart">
-                <span class="visually-hidden">Добавить в корзину</span>
-              </button>
-            </li>
-          </ul>
+          <div class="catalog-container">
+            <div class="catalog__container">
+              <ul class="catalog__list">
+                <li class="catalog__item">
+                  <div class="catalog__img-container">
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="./img/photo-hare-desktop@1x.jpg"
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="./img/photo-hare-tablet@1x.jpg"
+                      />
+                      <img
+                        src="./img/photo-hare-mobile@1x.jpg"
+                        alt="Зайчик попрыгайчик"
+                      />
+                    </picture>
+                  </div>
+                  <div class="catalog__general-container">
+                    <div class="catalog__item-container">
+                      <h3 class="catalog__item-name">Зайчик попрыгайчик</h3>
+                      <span class="catalog__item-description"
+                        >Рост 30 см, вес 200 г</span
+                      >
+                    </div>
+                    <div class="catalog__price-container">
+                      <p class="catalog__item-price">1 200 руб.</p>
+                      <a
+                        class="catalog__cart-link catalog__cart-link_rabbit"
+                        href="#"
+                        ><span class="visually-hidden"> В корзину </span></a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog__item">
+                  <div class="catalog__img-container">
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="./img/photo-2-desktop.png"
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="./img/photo-2-tablet.png"
+                      />
+                      <img
+                        src="./img/photo-2-mobile.png"
+                        alt="Корзинка для белья"
+                      />
+                    </picture>
+                  </div>
+                  <div class="catalog__general-container">
+                    <div class="catalog__item-container">
+                      <h3 class="catalog__item-name catalog__item-name_cart">
+                        Корзинка для белья
+                      </h3>
+                      <span class="catalog__item-description"
+                        >Диаметр 15 см, высота 10 см</span
+                      >
+                    </div>
+                    <div class="catalog__price-container">
+                      <p class="catalog__item-price">690 руб.</p>
+                      <a
+                        class="catalog__cart-link catalog__cart-link_small"
+                        href="#"
+                        ><span class="visually-hidden"> В корзину </span></a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog__item">
+                  <div class="catalog__img-container">
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="./img/photo-3-desktop.png"
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="./img/photo-3-tablet.png"
+                      />
+                      <img
+                        src="./img/photo-3-mobile.png"
+                        alt="Большая корзинка для игрушек"
+                      />
+                    </picture>
+                  </div>
+                  <div class="catalog__general-container">
+                    <div class="catalog__item-container">
+                      <h3
+                        class="catalog__item-name catalog__item-name_big-cart"
+                      >
+                        Большая корзинка<br />
+                        для игрушек
+                      </h3>
+                      <span class="catalog__item-description"
+                        >Диаметр 30 см, высота 30 см</span
+                      >
+                    </div>
+                    <div
+                      class="
+                        catalog__price-container
+                        catalog__price-container_big-cart
+                      "
+                    >
+                      <p class="catalog__item-price">1 500 руб.</p>
+                      <a
+                        class="catalog__cart-link catalog__cart-link_big"
+                        href="#"
+                        ><span class="visually-hidden"> В корзину </span></a
+                      >
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
       </div>
       <div class="catalog-page__video">
         <section class="video">
-          <div class="video__img-container">
-            <img src="./img/video-desktop@1x.jpg" alt="Процесс производства" />
+          <div class="catalog-container">
+            <div class="video__container">
+              <div class="video__img-container">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./img/video-desktop@1x.jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./img/video-tablet@1x.jpg"
+                  />
+                  <img
+                    src="./img/video-mobile@1x.jpg"
+                    alt="Процесс производства"
+                  />
+                </picture>
+              </div>
+              <h3 class="video__name">Процесс производства</h3>
+              <div class="video__wrapper">
+                <p class="video__description">
+                  По просьбам наших любимых фолловеров мы сняли для вас
+                  подробное видео о том, как появляются наши товары.
+                </p>
+                <div class="video__button">
+                  <button class="button-video">Сделать заказ</button>
+                </div>
+              </div>
+            </div>
           </div>
-          <h3 class="video__name">Процесс производства</h3>
-          <p class="video__description">
-            По просьбам наших любимых фолловеров мы сняли для вас подробное
-            видео о том, как появляются наши товары.
-          </p>
-          <button class="button product__button">Сделать заказ</button>
         </section>
       </div>
     </main>
     <div class="catalog-page__footer">
       <footer class="footer">
-        <div class="footer__logo-container">
-          <img src="./img/logo-footer.svg" alt="Мишка" />
-        </div>
-        <ul class="footer__social-list">
-          <li class="footer__social-item">
-            <a class="footer__social-link" href="https://www.instagram.com"
-              ><span class="visually-hidden"> Инстаграм </span></a
-            >
-          </li>
-          <li class="footer__social-item">
-            <a class="footer__social-link" href="https://www.facebook.com"
-              ><span class="visually-hidden"> Фейсбук </span></a
-            >
-          </li>
-          <li class="footer__social-item">
-            <a class="footer__social-link" href="https://twitter.com"
-              ><span class="visually-hidden"> Твиттер </span></a
-            >
-          </li>
-        </ul>
-        <p class="footer__text">Разработано</p>
-        <div class="footer__html-img">
-          <img src="./img/logo-htmlacademy.svg" alt="" />
+        <div class="footer__main-container">
+          <div class="footer__social-container">
+            <div class="footer__logo-container">
+              <img src="./img/logo-footer.svg" alt="Мишка" />
+            </div>
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a
+                  class="footer__social-link footer__social-link_inst"
+                  href="https://www.instagram.com"
+                  ><span class="visually-hidden"> Инстаграм </span></a
+                >
+              </li>
+              <li class="footer__social-item">
+                <a
+                  class="footer__social-link footer__social-link_face"
+                  href="https://www.facebook.com"
+                  ><span class="visually-hidden"> Фейсбук </span></a
+                >
+              </li>
+              <li class="footer__social-item">
+                <a
+                  class="footer__social-link footer__social-link_twit"
+                  href="https://twitter.com"
+                  ><span class="visually-hidden"> Твиттер </span></a
+                >
+              </li>
+            </ul>
+            <div class="footer__html-container">
+              <p class="footer__text">Разработано</p>
+              <div class="footer__html-img">
+                <img src="./img/logo-htmlacademy.svg" alt="Лого" />
+              </div>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
