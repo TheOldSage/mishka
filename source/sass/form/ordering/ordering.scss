@@ -1,9 +1,31 @@
-.ordering{
-    &__text{
-        width: 247px;
-        font-weight: $light;
-        font-size: 13px;
-        line-height: 24px;
-        margin-top: 40px;
+.ordering {
+  &__text {
+    width: 247px;
+    font-weight: $light;
+    font-size: 13px;
+    line-height: 24px;
+    margin-top: 40px;
+  }
+}
+@media (min-width: $tablet-width) {
+  .ordering {
+    &__text {
+      width: 612px;
+      margin-top: 70px;
+      font-weight: $light;
+      font-size: 17px;
+      line-height: 30px;
+      color: #444444;
+      margin-bottom: 50px;
     }
+  }
+}
+@media (min-width: $desktop-width) {
+  .ordering {
+    &__text {
+      width: 672px;
+      margin-top: 90px;
+      margin-left: 263px;
+    }
+  }
 }

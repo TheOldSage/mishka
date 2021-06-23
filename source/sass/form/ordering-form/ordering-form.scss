@@ -79,7 +79,7 @@
   &__item_color {
     padding-bottom: 50px;
   }
-  &__name-container{
+  &__name-container {
     display: flex;
     flex-direction: column;
     width: 100px;
@@ -89,7 +89,7 @@
     font-size: 17px;
     line-height: 18px;
   }
-  &__input{
+  &__input {
     border: none;
     padding: 0;
     padding-bottom: 10px;
@@ -101,18 +101,323 @@
     line-height: 18px;
     color: #444444;
   }
-  &__contacts-container{
+  &__input::placeholder {
+    opacity: 30%;
+  }
+  &__input_tel {
+    font-weight: $light;
+    font-size: 19px;
+    line-height: 18px;
+  }
+  &__label_tel::before {
+    content: "";
+    width: 25px;
+    height: 24px;
+    position: absolute;
+    background-image: url(./../../../img/icon-phone.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    right: 45px;
+    top: 1700px;
+    opacity: 20%;
+  }
+  &__contacts-container {
     width: 100px;
   }
-  &__textarea{
+  &__textarea {
     resize: none;
     width: 260px;
     height: 142px;
   }
-  &__text-description{
+  &__text-description {
     font-weight: $light;
     font-size: 14px;
     line-height: 16px;
   }
+  &__name-mail::before {
+    content: "";
+    position: absolute;
+    width: 179px;
+    height: 1px;
+    background-color: #63d1bb;
+    right: 30px;
+    margin-top: 7px;
+  }
+  &__name-mail {
+    font-weight: $bold;
+    font-size: 17px;
+    line-height: 16px;
+    color: #63d1bb;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+  &__label_mail::before {
+    content: "";
+    width: 32px;
+    height: 28px;
+    position: absolute;
+    background-image: url(./../../../img/icon-mail.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    right: 40px;
+    top: 1800px;
+    opacity: 20%;
+  }
+  &__textarea {
+    font-weight: $light;
+    font-size: 17px;
+    line-height: 18px;
+    color: #444444;
+  }
+  &__textarea::placeholder {
+    opacity: 30%;
+    width: 174px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
 }
-
+@media (min-width: $tablet-width) {
+  .ordering-form {
+    &__name::before {
+      display: none;
+    }
+    &__name-mail::before {
+      display: none;
+    }
+    &__radio {
+      position: absolute;
+      margin-left: -64px;
+      margin-top: -10px;
+    }
+    &__list {
+      margin-left: 263px;
+    }
+    &__name {
+      margin-bottom: -15px;
+    }
+    &__menu_radio {
+      margin-bottom: 30px;
+    }
+    &__list_check {
+      display: flex;
+      width: 450px;
+      flex-wrap: wrap;
+    }
+    &__item_color {
+      width: 155px;
+      padding-bottom: 50px;
+    }
+    &__text {
+      font-size: 19px;
+    }
+    &__menu-check-container {
+      width: 768px;
+      height: 304px;
+      background-color: #f1f1f1;
+      margin-left: -50px;
+    }
+    &__name_color {
+      padding-top: 70px;
+    }
+    &__menu_check {
+      margin-left: 50px;
+    }
+    &__name-container {
+      margin-left: 263px;
+      margin-top: 30px;
+    }
+    &__name_self {
+      margin-left: -263px;
+      margin-bottom: -30px;
+    }
+    &__label_place {
+      display: flex;
+      width: 400px;
+      align-items: center;
+    }
+    &__label-text {
+      margin-right: 20px;
+    }
+    &__contacts-container {
+      margin-left: 263px;
+    }
+    &__name_tel {
+      margin-bottom: 15px;
+      margin-left: -263px;
+      margin-bottom: -50px;
+    }
+    &__name-mail {
+      margin-bottom: 15px;
+      margin-left: -263px;
+      margin-bottom: -50px;
+    }
+    &__label_tel {
+      display: flex;
+      width: 400px;
+      align-items: center;
+    }
+    &__label_mail {
+      display: flex;
+      width: 400px;
+      align-items: center;
+    }
+    &__input::placeholder {
+      padding-left: 20px;
+    }
+    &__menu_tel {
+      margin-top: 50px;
+    }
+    &__menu_mail {
+      margin-top: 30px;
+    }
+    &__contacts-wrapper {
+      width: 768px;
+      height: 226px;
+      background-color: #f1f1f1;
+      margin-left: -50px;
+    }
+    &__input_mail {
+      background-color: #f1f1f1;
+    }
+    &__input_tel {
+      background-color: #f1f1f1;
+    }
+    &__name_tel {
+      padding-top: 70px;
+    }
+    &__menu_tel {
+      margin-left: 50px;
+    }
+    &__menu_mail {
+      margin-left: 50px;
+    }
+    &__label_mail::before {
+      content: "";
+      width: 32px;
+      height: 28px;
+      right: 70px;
+      top: 1337px;
+      opacity: 20%;
+    }
+    &__label_tel::before {
+      content: "";
+      width: 32px;
+      height: 28px;
+      right: 65px;
+      top: 1267px;
+      opacity: 20%;
+    }
+    &__textarea {
+      font-weight: $light;
+      font-size: 19px;
+      line-height: 18px;
+      color: #444444;
+      width: 401px;
+      height: 142px;
+    }
+    &__textarea::placeholder {
+      opacity: 30%;
+      width: 368px;
+      padding-top: 10px;
+      padding-left: 10px;
+    }
+    &__menu_textarea {
+      margin-left: 263px;
+      margin-top: 30px;
+    }
+    &__name_textarea {
+      margin-left: -263px;
+      margin-bottom: -30px;
+    }
+    &__button-wrapper {
+      display: flex;
+      margin-top: 40px;
+    }
+    &__text-description {
+      font-weight: $light;
+      font-size: 17px;
+      line-height: 30px;
+      margin-left: 363px;
+    }
+    &__button{
+      margin-left: -663px;
+      margin-bottom: 50px;
+    }
+  }
+}
+@media (min-width: $desktop-width) {
+  .ordering-form {
+    &__name{
+      margin-left: 130px;
+    }
+    &__menu-check-container {
+      width: 1250px;
+    }
+    &__name_self{
+      margin-left: -130px;
+      margin-bottom: -50px;
+    }
+    &__name_tel{
+      margin-left: -130px;
+      margin-bottom: -35px;
+    }
+    &__name-mail{
+      margin-left: -130px;
+    }
+    &__contacts-wrapper {
+      width: 1250px;
+    }
+    &__menu_tel{
+      width: 700px;
+    }
+    &__label{
+      width: 700px;
+    }
+    &__label_place{
+      margin-top: 20px;
+    }
+    &__label_mail::before {
+      content: "";
+      width: 32px;
+      height: 28px;
+      right: 255px;
+      top: 1440px;
+      opacity: 20%;
+    }
+    &__label_tel::before {
+      content: "";
+      width: 32px;
+      height: 28px;
+      right: 250px;
+      top: 1360px;
+      opacity: 20%;
+    }
+    &__textarea {
+      width: 700px;
+    }
+    &__name_textarea{
+      margin-left: -130px;
+    }
+    &__button-wrapper {
+      display: flex;
+      margin-top: 40px;
+      align-items: flex-start;
+    }
+    &__text-description {
+      font-weight: $light;
+      font-size: 17px;
+      line-height: 30px;
+      margin-left: 663px;
+    }
+    &__button{
+      margin-left: -703px;
+      margin-bottom: 50px;
+    }
+    &__list_check {
+      display: flex;
+      width: 750px;
+      flex-wrap: wrap;
+    }
+  }
+}
