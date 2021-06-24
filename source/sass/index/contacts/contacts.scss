@@ -25,6 +25,12 @@
   &__table-cell_right {
     border-bottom: 1px solid #63d1bb;
   }
+  &__table-cell_right:hover {
+    color: #63d1bb;
+  }
+  &__table-cell_right:active {
+    opacity: 30%;
+  }
   &__map {
     margin-top: 40px;
     width: 320px;

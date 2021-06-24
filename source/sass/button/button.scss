@@ -10,6 +10,62 @@
   color: #444444;
   text-transform: uppercase;
 }
+.button:hover {
+  @include reset-btn();
+  width: 260px;
+  height: 52px;
+  border: 2px solid #444444;
+  text-align: center;
+  font-weight: $bold;
+  line-height: 20px;
+  font-size: 17px;
+  color: #ffffff;
+  background-color: #444444;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.button:active {
+  @include reset-btn();
+  width: 260px;
+  height: 52px;
+  border: 2px solid #444444;
+  text-align: center;
+  font-weight: $bold;
+  line-height: 20px;
+  font-size: 17px;
+  color: #ffffff;
+  background-color: #444444;
+  text-transform: uppercase;
+  opacity: 30%;
+}
+.button-small:hover {
+  @include reset-btn();
+  width: 260px;
+  height: 52px;
+  border: 2px solid #444444;
+  text-align: center;
+  font-weight: $bold;
+  line-height: 20px;
+  font-size: 17px;
+  color: #ffffff;
+  background-color: #444444;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.button-small:active {
+  @include reset-btn();
+  width: 260px;
+  height: 52px;
+  border: 2px solid #444444;
+  text-align: center;
+  font-weight: $bold;
+  line-height: 20px;
+  font-size: 17px;
+  color: #ffffff;
+  background-color: #444444;
+  text-transform: uppercase;
+  opacity: 30%;
+}
 .button_without-border {
   @include reset-btn();
   width: 260px;
@@ -33,6 +89,34 @@
   font-size: 17px;
   color: #444444;
   text-transform: uppercase;
+}
+.button-video:hover {
+  @include reset-btn();
+  width: 192px;
+  height: 52px;
+  border: 2px solid #444444;
+  text-align: center;
+  font-weight: $bold;
+  line-height: 16px;
+  font-size: 17px;
+  color: #ffffff;
+  background-color: #444444;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.button-video:active {
+  @include reset-btn();
+  width: 192px;
+  height: 52px;
+  border: 2px solid #444444;
+  text-align: center;
+  font-weight: $bold;
+  line-height: 16px;
+  font-size: 17px;
+  color: #ffffff;
+  background-color: #444444;
+  text-transform: uppercase;
+  opacity: 30%;
 }
 .button-small {
   @include reset-btn();
@@ -59,6 +143,34 @@
     color: #444444;
     text-transform: uppercase;
   }
+  .button-small:hover {
+    @include reset-btn();
+    width: 175px;
+    height: 52px;
+    border: 2px solid #444444;
+    text-align: center;
+    font-weight: $bold;
+    line-height: 20px;
+    font-size: 17px;
+    color: #ffffff;
+    background-color: #444444;
+    text-transform: uppercase;
+    transition: 0.3s;
+  }
+  .button-small:active {
+    @include reset-btn();
+    width: 175px;
+    height: 52px;
+    border: 2px solid #444444;
+    text-align: center;
+    font-weight: $bold;
+    line-height: 20px;
+    font-size: 17px;
+    color: #ffffff;
+    background-color: #444444;
+    text-transform: uppercase;
+    opacity: 30%;
+  }
   .button-video {
     @include reset-btn();
     width: 584px;
@@ -70,6 +182,34 @@
     font-size: 17px;
     color: #444444;
     text-transform: uppercase;
+  }
+  .button-video:hover {
+    @include reset-btn();
+    width: 584px;
+    height: 52px;
+    border: 2px solid #444444;
+    text-align: center;
+    font-weight: $bold;
+    line-height: 16px;
+    font-size: 17px;
+    color: #ffffff;
+    background-color: #444444;
+    text-transform: uppercase;
+    transition: 0.3s;
+  }
+  .button-video:active {
+    @include reset-btn();
+    width: 584px;
+    height: 52px;
+    border: 2px solid #444444;
+    text-align: center;
+    font-weight: $bold;
+    line-height: 16px;
+    font-size: 17px;
+    color: #ffffff;
+    background-color: #444444;
+    text-transform: uppercase;
+    opacity: 30%;
   }
 }
 @media (min-width: $desktop-width) {

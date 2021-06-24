@@ -1,5 +1,21 @@
 .header {
   min-width: 320px;
+  &__logo:hover{
+    opacity: 60%;
+    transition: 0.3s;
+  }
+  &__logo:active{
+    opacity: 30%;
+    transition: 0.3s;
+  }
+  &__link:hover{
+    opacity: 60%;
+    transition: 0.3s;
+  }
+  &__link:active{
+    opacity: 30%;
+    transition: 0.3s;
+  }
   &__visually-hidden{
     font-weight: $bold;
     font-size: 17px;
@@ -26,6 +42,52 @@
     background-position: 0 0;
     left: 25px;
     opacity: 20%;
+  }
+  &__search-button:hover::before {
+    content: "";
+    width: 26px;
+    height: 25px;
+    position: absolute;
+    background-image: url(./../../img/icon-search.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    filter: invert(82%) sepia(41%) saturate(489%) hue-rotate(109deg)
+      brightness(88%) contrast(84%);
+    left: 25px;
+    opacity: 60%;
+    transition: 0.3s;
+  }
+  &__search-button:active::before {
+    content: "";
+    width: 26px;
+    height: 25px;
+    position: absolute;
+    left: 25px;
+    opacity: 30%;
+    transition: 0.3s;
+  }
+  &__item_cart:hover::before {
+    content: "";
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    background-image: url(./../../img/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    filter: invert(82%) sepia(41%) saturate(489%) hue-rotate(109deg)
+      brightness(88%) contrast(84%);
+    left: 25px;
+    opacity: 60%;
+    transition: 0.3s;
+  }
+  &__item_cart:active::before {
+    content: "";
+    width: 26px;
+    height: 25px;
+    position: absolute;
+    left: 25px;
+    opacity: 30%;
+    transition: 0.3s;
   }
   &__item {
     display: flex;
@@ -71,6 +133,54 @@
 @media (min-width: $tablet-width) {
   .header {
     border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+    &__search-button::before {
+      content: "";
+      width: 26px;
+      height: 25px;
+      position: absolute;
+      background-image: url(./../../img/icon-search.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      left: 25px;
+      opacity: 20%;
+    }
+    &__search-button:hover::before {
+      content: "";
+      width: 26px;
+      height: 25px;
+      position: absolute;
+      background-image: url(./../../img/icon-search.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      filter: invert(82%) sepia(41%) saturate(489%) hue-rotate(109deg)
+        brightness(88%) contrast(84%);
+      left: 33px;
+      opacity: 60%;
+      transition: 0.3s;
+    }
+    &__search-button:active::before {
+      content: "";
+      width: 26px;
+      height: 25px;
+      position: absolute;
+      left: 33px;
+      opacity: 30%;
+      transition: 0.3s;
+    }
+    &__item_cart:hover::before {
+      content: "";
+      width: 27px;
+      height: 27px;
+      position: absolute;
+      background-image: url(./../../img/icon-cart.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      filter: invert(82%) sepia(41%) saturate(489%) hue-rotate(109deg)
+        brightness(88%) contrast(84%);
+      left: 115px;
+      opacity: 60%;
+      transition: 0.3s;
+    }
     &__visually-hidden{
       display: none;
     }

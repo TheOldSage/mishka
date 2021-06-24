@@ -18,11 +18,25 @@
     background-image: url(./../../../img/huge-arrow-right.svg.png);
     background-repeat: no-repeat;
     background-position: center center;
+    transition: 0.3s;
+  }
+  &__button_right:hover {
+   opacity: 60%;
+  }
+  &__button_right:active {
+   opacity: 30%;
   }
   &__button_left {
     background-image: url(./../../../img/huge-arrow-left.svg.png);
     background-repeat: no-repeat;
     background-position: center center;
+    transition: 0.3s;
+  }
+  &__button_left:hover {
+   opacity: 60%;
+  }
+  &__button_left:active {
+    opacity: 30%;
   }
   &__user-name {
     color: #000000;

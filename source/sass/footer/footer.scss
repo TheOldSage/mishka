@@ -2,11 +2,32 @@
   &__logo-container {
     display: none;
   }
+  &__logo-container:hover {
+    opacity: 60%;
+    filter: invert(82%) sepia(41%) saturate(489%) hue-rotate(109deg)
+      brightness(88%) contrast(84%);
+   }
+   &__logo-container:active {
+    opacity: 30%;
+    filter: invert(82%) sepia(41%) saturate(489%) hue-rotate(109deg)
+      brightness(88%) contrast(84%);
+   }
   &__social-list {
     @include reset-list();
     display: flex;
     margin-top: 30px;
+    transition: 0.3s;
   }
+  &__social-list:hover {
+    opacity: 60%;
+    filter: invert(82%) sepia(41%) saturate(489%) hue-rotate(109deg)
+      brightness(88%) contrast(84%);
+   }
+   &__social-list:active {
+    opacity: 30%;
+    filter: invert(82%) sepia(41%) saturate(489%) hue-rotate(109deg)
+      brightness(88%) contrast(84%);
+   }
   &__social-link {
     position: relative;
   }
@@ -47,6 +68,12 @@
     color: #000000;
     font-weight: $bold;
     border-top: 1px solid rgba($color: #000000, $alpha: 0.1);
+  }
+  &__html-container:hover {
+   opacity: 60%;
+  }
+  &__html-container:active {
+   opacity: 30%;
   }
   &__html-img {
     margin-left: 20px;

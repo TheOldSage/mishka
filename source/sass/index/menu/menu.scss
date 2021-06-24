@@ -32,6 +32,12 @@
   &__item_toys {
     background-color: #56c3b2;
   }
+  &__item_toys:hover {
+    opacity: 60%;
+  }
+  &__item_toys:active {
+    opacity: 30%;
+  }
   &__item_toys::before{
       content: "";
       width: 68px;

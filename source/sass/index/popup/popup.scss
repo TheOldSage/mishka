@@ -35,6 +35,29 @@
     font-size: 17px;
     line-height: 16px;
     text-transform: uppercase;
+    transition: 0.3s;
+  }
+  &__button:hover {
+    border: 2px solid rgba($color: #444444, $alpha: 0.3);
+    width: 82px;
+    height: 52px;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: $bold;
+    font-size: 17px;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+  &__button:active {
+    border: 2px solid rgba($color: #46c1ae, $alpha: 1);
+    width: 82px;
+    height: 52px;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: $bold;
+    font-size: 17px;
+    line-height: 16px;
+    text-transform: uppercase;
   }
   &__text {
     margin-top: 20px;

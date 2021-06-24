@@ -5,6 +5,13 @@
   &__item {
     border: 1px solid #ececec;
     margin-top: 30px;
+    transition: 0.3s;
+  }
+  &__item:hover {
+    box-shadow: 10px 10px 20px rgba(4, 6, 6, 0.2);
+  }
+  &__item:active {
+    box-shadow: 10px 10px 20px rgba(4, 6, 6, 0.1);
   }
   &__img-container {
     widows: 260px;
@@ -18,6 +25,13 @@
     color: #000;
     text-align: center;
     margin-top: 30px;
+    transition: 0.3s;
+  }
+  &__item-name:hover {
+    opacity: 60%;
+  }
+  &__item-name:active {
+    opacity: 30%;
   }
   &__item-name_cart {
     margin-right: 20px;
@@ -56,6 +70,24 @@
     background-position: 0 0;
     right: 60px;
     opacity: 20%;
+  }
+  &__cart-link:hover::before {
+    content: "";
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    background-position: 0 0;
+    filter: invert(82%) sepia(41%) saturate(489%) hue-rotate(109deg)
+      brightness(88%) contrast(84%);
+    transition: 0.3s;
+  }
+  &__cart-link:active::before {
+    content: "";
+    width: 26px;
+    height: 25px;
+    position: absolute;
+    opacity: 30%;
+    transition: 0.3s;
   }
 }
 @media (min-width: $tablet-width) {
